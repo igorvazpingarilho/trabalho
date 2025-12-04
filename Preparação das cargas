@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stack>
+#include <string>
+using namespace std;
+
+// Passo 1: Definir a struct Carga
+struct Carga {
+    int id_caixa;
+    float peso_kg;
+    string destino;
+};
+
+int main() {
+    // Passo 2: Criar a Pilha
+    stack<Carga> pilha;
+
+    // Passo 3: Criar e empilhar as 3 cargas
+    Carga c1 = {501, 15.5f, "Setor Leste"};
+    Carga c2 = {502, 22
